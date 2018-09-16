@@ -5,7 +5,7 @@
 ------------
 
 - [file upload](#file-upload)
-
+- [json handle](#json-handle)
 
 ## file upload
 
@@ -39,8 +39,28 @@
 	}
 ```
 
-What confused me is why should use the bean with id=multipartResolver. I think it has some relation bewteen enctype="multipart/form-data" and
+What confused me is why should use the bean with id=multipartResolver. Perhaps it has some relation bewteen enctype="multipart/form-data" and
 multipartResolver Class, as it's mentioned in [16.8 Spring's multipart (fileupload) support](https://docs.spring.io/spring/docs/3.0.0.M3/reference/html/ch16s08.html).
 So it may be dispatched when springMVC detected the header with enctype="multipart/form-data", and it goes to the multipartResolver.
 
 
+## json handle
+
+* In html, I often use jq for json post
+```javascript
+	$.ajax({
+	  dataType: "json",
+	  url: url,
+	  data: data,
+	  success: success
+	});
+```
+
+* In MVC controller,add produces = "application/json" in the annotation of RequestMapping, and return @ResponseBody with json format text.
+```java
+	@RequestMapping(value = "/url", produces = "application/json")
+    @ResponseBody
+    public String tablesql(@RequestParam(value = "param",required = false) String param){
+        return "{json:\"format\"}";
+    }
+```
