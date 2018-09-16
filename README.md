@@ -1,4 +1,4 @@
-# Somet About Spring
+# Something About Spring
 
 
 ## Contents
@@ -40,7 +40,7 @@
 ```
 
 What confused me is why should use the bean with id=multipartResolver. I think it has some relation bewteen enctype="multipart/form-data" and
-multipartResolver Class, as it's metioned in [16.8 Spring's multipart (fileupload) support](https://docs.spring.io/spring/docs/3.0.0.M3/reference/html/ch16s08.html).
+multipartResolver Class, as it's mentioned in [16.8 Spring's multipart (fileupload) support](https://docs.spring.io/spring/docs/3.0.0.M3/reference/html/ch16s08.html).
 So it may be dispatched when springMVC detected the header with enctype="multipart/form-data", and it goes to the multipartResolver.
 
 
