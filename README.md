@@ -59,8 +59,8 @@ So it may be dispatched when springMVC detected the header with enctype="multipa
 * In MVC controller,add produces = "application/json" in the annotation of RequestMapping, and return @ResponseBody with json format text.
 ```java
 	@RequestMapping(value = "/url", produces = "application/json")
-    @ResponseBody
-    public String tablesql(@RequestParam(value = "param",required = false) String param){
-        return "{json:\"format\"}";
-    }
+	@ResponseBody
+	public String tablesql(@RequestParam(value = "param",required = false) String param){
+		return "{json:\"format\"}";
+	}
 ```
