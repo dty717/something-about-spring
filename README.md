@@ -11,15 +11,17 @@
 
 * In html, just put enctype="multipart/form-data" into form tag as an attribute 
 
-```<form action="/uploadThing" method="post" enctype="multipart/form-data">
-        <input type="file" name="file"/>
+```
+	<form action="/uploadThing" method="post" enctype="multipart/form-data">
+		<input type="file" name="file"/>
 	 ...
-   </form>
+	</form>
 ```
 
 * In applicationContext.xml, add a bean with id=multipartResolver
 
-```<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+```
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
         <!-- one of the properties available; the maximum file size in bytes -->
         <property name="maxUploadSize" value="100000"/>
     </bean>
