@@ -10,7 +10,7 @@
 	<Context path="" docBase="war_name" debug="0" reloadable="true"></Context>
 ```
    to make it as a root.
-   The real reason is that it connect "" to "war_name",so when you visit "",it convert to visiting "war_name",as you thought it is root.
+   The real reason is that it connect "/" to "/war_name",so when you visit "/url_path",it convert to visiting "/url_path/war_name",as you thought it is root.
    Another way is make you appName ROOT,and in this way ,don't use (Context path) in server.xml,it will conflict.
    So the Good way as I think,when deploying the project first time,Stop tomcat, and remove war file and change the deployed file as ROOT
 
