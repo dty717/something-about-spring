@@ -83,13 +83,13 @@ So it may be dispatched when springMVC detected the header with enctype="multipa
 
 * create a maven project,then add pom attributes, then add web.xml, applicationContext.xml, dispatcher-servlet.xml
 
-  reference: 
+  reference:
+
 <https://maven.apache.org/archetypes/maven-archetype-webapp/index.html>
 
 <https://medium.com/nycdev/java-build-a-tomcat-web-app-with-maven-and-spring-fbc823fa9a37>
 
 <https://howtodoinjava.com/maven/tomcat-maven-plugin-example/>
-
 
 <http://tomcat.apache.org/maven-plugin-trunk/tomcat7-maven-plugin/usage.html>
 
