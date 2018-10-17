@@ -81,7 +81,7 @@ So it may be dispatched when springMVC detected the header with enctype="multipa
 
 ## maven create spring
 
-* create a maven project,then add pom attributes, then add web.xml, applicationContext.xml, dispatcher-servlet.xml
+* create a maven project,then add pom attributes, then add web.xml, applicationContext.xml, dispatcher-servlet.xml.
 
   reference:
 
