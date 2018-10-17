@@ -8,7 +8,7 @@
 * In server.xml,you can add it as a root.
 ```xml
 	<Context path="" docBase="war_name" debug="0" reloadable="true"></Context>
-```
+``` 
    The real reason is that it connect "/" to "/war_name",so when you visit "/url_path",it convert to visiting "/url_path/war_name",as you thought it is root.
    Another way is make you appName ROOT,and in this way ,don't use (Context path) in server.xml,it will conflict.
 * So the Good way as I think,when deploying the project first time,Stop tomcat, and remove war file and change the deployed file as ROOT
@@ -83,7 +83,7 @@ So it may be dispatched when springMVC detected the header with enctype="multipa
 
 * create a maven project,then add pom attributes, then add web.xml, applicationContext.xml, dispatcher-servlet.xml
 
-reference
+  reference: 
 <https://maven.apache.org/archetypes/maven-archetype-webapp/index.html>
 
 <https://medium.com/nycdev/java-build-a-tomcat-web-app-with-maven-and-spring-fbc823fa9a37>
