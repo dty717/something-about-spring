@@ -19,6 +19,7 @@
 - [file upload](#file-upload)
 - [json handle](#json-handle)
 - [maven create spring](#maven-create-spring)
+- [return text file](#return-text-file)
 
 ## file upload
 
@@ -98,3 +99,13 @@ So it may be dispatched when springMVC detected the header with enctype="multipa
 <https://crunchify.com/how-to-import-all-spring-mvc-dependencies-to-your-maven-project/>
 
 <http://www.avajava.com/tutorials/lessons/how-do-i-create-a-web-application-project-using-maven.html>
+
+
+## return text file
+
+* In header, set produces value MediaType.APPLICATION_OCTET_STREAM_VALUE of the RequestMapping.
+```java
+    @RequestMapping(value = { "url" },produces = MediaType.APPLICATION_OCTET_STREAM_VALUE)
+
+```
+
