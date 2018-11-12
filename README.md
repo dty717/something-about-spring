@@ -20,6 +20,7 @@
 - [json handle](#json-handle)
 - [maven create spring](#maven-create-spring)
 - [return text file](#return-text-file)
+- [integration](#integration)
 
 ## file upload
 
@@ -108,4 +109,12 @@ So it may be dispatched when springMVC detected the header with enctype="multipa
     @RequestMapping(value = { "url" },produces = MediaType.APPLICATION_OCTET_STREAM_VALUE)
 
 ```
+
+## integration
+
+* reference:
+
+<https://github.com/spring-projects/spring-integration-samples/tree/master/basic/tcp-client-server>
+
+<https://github.com/spring-projects/spring-integration-samples/issues/87>
 
