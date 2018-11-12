@@ -79,9 +79,9 @@ e.x
         }
     });
 ```
-    In this situation, convert the charset in MVC because the default charset for FormData is ISO-8859-1, e.x.
+In this situation, convert the charset in MVC because the default charset for FormData is ISO-8859-1, e.x.
 ```java
-	@RequestMapping(value = { "/uploadFile" },produces = "application/json;charset=utf-8")
+    @RequestMapping(value = { "/uploadFile" },produces = "application/json;charset=utf-8")
     @ResponseBody
     public String uploadThing(@RequestParam(value="path", required = true)String path,@RequestParam(value = "file", required = false) MultipartFile multipartFile) {
         String orgName = multipartFile.getOriginalFilename();
