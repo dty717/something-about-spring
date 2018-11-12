@@ -62,8 +62,7 @@
   
 e.x
 ```javascript
-	var formData = new FormData();
-          
+    var formData = new FormData();
     formData.append("path",path);
     formData.append("file",file);
     $.ajax({
