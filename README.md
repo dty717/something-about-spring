@@ -54,6 +54,47 @@
 	}
 ```
 
+* Another choice is js, with using formdata,
+ 
+  reference:
+
+<https://developer.mozilla.org/en-US/docs/Web/API/FormData/Using_FormData_Objects>
+  
+e.x
+```javascript
+	var formData = new FormData();
+          
+    formData.append("path",path);
+    formData.append("file",file);
+    $.ajax({
+        url: 'uploadFile',
+        type: 'POST',
+        data: formData,
+        enctype: 'multipart/form-data',
+        processData: false,
+        contentType: false,
+        cache: false,
+        success: function (response) {
+            fresh();
+        }
+    });
+```
+    In this situation, convert the charset in MVC because the default charset for FormData is ISO-8859-1, e.x.
+```java
+	@RequestMapping(value = { "/uploadFile" },produces = "application/json;charset=utf-8")
+    @ResponseBody
+    public String uploadThing(@RequestParam(value="path", required = true)String path,@RequestParam(value = "file", required = false) MultipartFile multipartFile) {
+        String orgName = multipartFile.getOriginalFilename();
+        try {
+            path=new String(path.getBytes("ISO-8859-1"),"utf-8");
+            orgName=new String(orgName.getBytes("ISO-8859-1"),"utf-8");
+        } catch(Exception e) {
+            
+        }
+        ...
+```
+
+
 What confused me is why should use the bean with id=multipartResolver. Perhaps it has some relation bewteen enctype="multipart/form-data" and
 multipartResolver Class, as it's mentioned in [16.8 Spring's multipart (fileupload) support](https://docs.spring.io/spring/docs/3.0.0.M3/reference/html/ch16s08.html).
 So it may be dispatched when springMVC detected the header with enctype="multipart/form-data", and it goes to the multipartResolver.
