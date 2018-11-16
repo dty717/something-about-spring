@@ -154,6 +154,8 @@ So it may be dispatched when springMVC detected the header with enctype="multipa
 
 * reference:
 
+<https://github.com/spring-projects/spring-integration/blob/master/src/reference/asciidoc/ip.adoc>
+
 <https://github.com/spring-projects/spring-integration-samples/tree/master/basic/tcp-client-server>
 
 <https://github.com/spring-projects/spring-integration-samples/issues/87>
