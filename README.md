@@ -21,6 +21,7 @@
 - [maven create spring](#maven-create-spring)
 - [return text file](#return-text-file)
 - [integration](#integration)
+- [javac package](#package)
 
 ## file upload
 
@@ -159,4 +160,11 @@ So it may be dispatched when springMVC detected the header with enctype="multipa
 <https://github.com/spring-projects/spring-integration-samples/tree/master/basic/tcp-client-server>
 
 <https://github.com/spring-projects/spring-integration-samples/issues/87>
+
+## package
+
+* folder don't determine the class package when javac compiling
+* the class is ordered by folder
+In any folder, the package is like "aa.bb.xxx" which is all ok.
+when having compiled, the class package must be place in folder aa/bb/xxx
 
