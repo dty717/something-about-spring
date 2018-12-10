@@ -16,7 +16,7 @@
 
 * install java
 ```sh
-    rpm -ivh jdk-8u131-linux-i586.rpm
+    rpm -ivh jdk-8u131-linux-x64.rpm
 ``` 
 [refer oracle install guides](https://docs.oracle.com/javase/8/docs/technotes/guides/install/linux_jdk.html)
 
