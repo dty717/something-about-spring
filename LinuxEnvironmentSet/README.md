@@ -1,4 +1,4 @@
-# Set Linux Environment(🙈)
+# Set Linux Environment(🙈🙉🙊)
 
 
 ## install java
