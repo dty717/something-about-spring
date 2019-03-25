@@ -1,11 +1,11 @@
-# Set Linux Environment(centos 7)(🙈🙉🙊)
+# Set Linux Environment(ubuntu)(🙈🙉🙊)
 
 
 ## install java
 * create dir for java
 ```sh
     cd /usr
-    mkdir java
+    sudo mkdir java
     cd java
 ``` 
 
