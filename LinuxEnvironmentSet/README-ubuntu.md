@@ -9,31 +9,16 @@
     cd java
 ``` 
 
-* download java(jdk-8u131-linux-x64)
+* install software-properties-common(if not install)
 ```sh
-	wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-linux-x64.rpm"
+    sudo apt install software-properties-common
 ``` 
 
 * install java
 ```sh
-    rpm -ivh jdk-8u131-linux-x64.rpm
+    sudo add-apt-repository ppa:webupd8team/java
 ``` 
-[refer oracle install guides](https://docs.oracle.com/javase/8/docs/technotes/guides/install/linux_jdk.html)
-
-
-* set java home
-    no need setting java/bin becasue it has been done in rpm install
-```sh
-    vi ~/.bashrc
-``` 
-[refer set path](https://stackoverflow.com/questions/14637979/how-to-permanently-set-path-on-linux-unix)
-    type [i] to insert 
-```txt
-    export JAVA_HOME="/usr/java/jdk1.8.0_131"
-``` 
-    type [Exc] to break out insert mod
-    type [:][x] and [enter] to save and quit
-
+[refer oracle install guides](http://tipsonubuntu.com/2016/07/31/install-oracle-java-8-9-ubuntu-16-04-linux-mint-18/)
 
 ## install maven
 * create dir for maven
@@ -62,4 +47,7 @@
     type [:][x] and [enter] to save and quit
 [refer install maven](https://maven.apache.org/install.html)
 
-
+* reboot
+```sh
+    reboot now
+``` 
