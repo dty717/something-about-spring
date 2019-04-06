@@ -45,6 +45,7 @@
 * But in verison (>4.3.14), the default form params have changed, including name(=username),password(=password),action(=login).
 * the csrf is disable by default.
 ```html
+	
 	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
     <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
     <%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
@@ -73,4 +74,10 @@
             </form>
         </body>
     </html>
+```
+```xml
+    <security:http auto-config="true" use-expressions="true">
+    	...
+        <security:csrf disabled="true"/>
+    </security:http>
 ```
