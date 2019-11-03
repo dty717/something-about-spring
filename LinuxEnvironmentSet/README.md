@@ -1,4 +1,4 @@
-# Set Linux Environment(centos 7)(ðŸ™ˆðŸ™‰ðŸ™Š)
+# Set Linux Environment(centos 7)(¨¦?????¨¦?????¨¦?????)
 
 
 ## install java
@@ -44,10 +44,10 @@
     cd maven
 ``` 
 
-* download maven(maven-3.6.0)
+* download maven(maven-3.6.2)
 ```sh
-    wget http://apache.osuosl.org/maven/maven-3/3.6.0/binaries/apache-maven-3.6.0-bin.zip
-    unzip apache-maven-3.6.0-bin.zip
+    wget http://apache.osuosl.org/maven/maven-3/3.6.2/binaries/apache-maven-3.6.2-bin.zip
+    unzip apache-maven-3.6.2-bin.zip
 ```
 
 * set maven home
@@ -56,7 +56,7 @@
 ``` 
     type [i] to insert 
 ```txt
-    export PATH="$PATH:/usr/maven/apache-maven-3.6.0/bin"
+    export PATH="$PATH:/usr/maven/apache-maven-3.6.2/bin"
 ``` 
     type [Exc] to break out insert mod
     type [:][x] and [enter] to save and quit
