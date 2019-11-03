@@ -1,4 +1,4 @@
-# Set Linux Environment(ubuntu)(ððð)
+# Set Linux Environment(ubuntu)(🙈🙉🙊)
 
 
 ## install java

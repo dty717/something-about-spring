@@ -1,4 +1,4 @@
-# Set Linux Environment(centos 7)(ððð)
+# Set Linux Environment(centos 7)(🙈🙉🙊)
 
 
 ## install java
