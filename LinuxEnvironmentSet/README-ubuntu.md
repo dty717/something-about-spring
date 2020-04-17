@@ -47,6 +47,16 @@
     type [:][x] and [enter] to save and quit
 [refer install maven](https://maven.apache.org/install.html)
 
+* get permission(option for not root)
+```sh
+    chmod a+x /usr/local/apache-maven/apache-maven-3.6.2/bin/mvn
+```
+    make mvn has permission.
+```sh
+    sudo chown -R $USER:$USER /usr/path_need_mvn/
+```
+    turn the floders and files the mvn uses has permission.
+
 * reboot
 ```sh
     reboot now
