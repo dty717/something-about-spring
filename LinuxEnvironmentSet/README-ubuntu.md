@@ -76,15 +76,15 @@
 * Start the MySQL service
     The MySQL server is started automatically after installation. You can check the status of the MySQL server with the following command:
 ```sh
-    sudo service status mysqld
+    sudo service mysql status
 ```
     To disable it, you can use the disable command:
 ```sh
-    sudo service disable mysqld
+    sudo service mysql disable
 ```
     To stop the MySQL service, use the stop command:
 ```sh
-    sudo service stop mysqld
+    sudo service mysql stop
 ```
     To start the MySQL service, use the start command:
 ```sh
