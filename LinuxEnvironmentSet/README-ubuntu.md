@@ -137,5 +137,9 @@ show table:
 ```sh
     select * From thing ;
 ``` 
-
+rm mysql 
+sudo service mysql stop
+sudo apt-get --purge remove "mysql*"
+sudo rm -rf /etc/mysql/ \
+https://askubuntu.com/questions/806107/remove-mariadb-mysql-databases
 [refer install mysql](https://phoenixnap.com/kb/how-to-install-mysql-on-centos-7)
